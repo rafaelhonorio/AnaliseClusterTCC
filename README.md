@@ -18,15 +18,18 @@ Este projeto realiza uma análise exploratória e clustering em dados de um ques
    git clone https://github.com/seu-usuario/seu-repo.git
    cd seu-repo
 2. Instale as dependências (preferencialmente num ambiente virtual):
-  pip install pandas numpy matplotlib plotly scikit-learn kmodes
+   ```bash
+   pip install pandas numpy matplotlib plotly scikit-learn kmodes
 
-3. Ajuste o caminho do arquivo de dados:
+4. Ajuste o caminho do arquivo de dados:
 No script analise.py, edite:
-  df = pd.read_excel("/content/drive/MyDrive/tabela_clusters.xlsx", sheet_name="base toda")
+   ```bash
+   df = pd.read_excel("/content/drive/MyDrive/tabela_clusters.xlsx", sheet_name="base toda")
 para apontar para o local onde está o seu arquivo tabela_clusters.xlsx.
 
-4. Execute o script:
-  python analise.py
+6. Execute o script:
+   ```bash
+   python analise.py
 
 💡 Este script foi inicialmente desenvolvido no Google Colab e contém comandos específicos como drive.mount('/content/drive'). Caso execute localmente, remova ou adapte estas linhas.
 
