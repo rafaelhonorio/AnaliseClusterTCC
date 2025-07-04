@@ -21,13 +21,13 @@ Este projeto realiza uma análise exploratória e clustering em dados de um ques
    ```bash
    pip install pandas numpy matplotlib plotly scikit-learn kmodes
 
-4. Ajuste o caminho do arquivo de dados:
+3. Ajuste o caminho do arquivo de dados:
 No script analise.py, edite:
    ```bash
    df = pd.read_excel("/content/drive/MyDrive/tabela_clusters.xlsx", sheet_name="base toda")
 para apontar para o local onde está o seu arquivo tabela_clusters.xlsx.
 
-6. Execute o script:
+4. Execute o script:
    ```bash
    python analise.py
 
@@ -40,13 +40,13 @@ kmodes para clustering com K-Prototypes
 matplotlib e plotly para visualizações
 
 📝 Principais arquivos
-analise.py : Script principal com todo o pipeline de pré-processamento, clustering e visualização.
-tabela_clusters.xlsx : Arquivo esperado com os dados originais (não incluído no repositório).
+   analise.py : Script principal com todo o pipeline de pré-processamento, clustering e visualização.
+   tabela_clusters.xlsx : Arquivo esperado com os dados originais (não incluído no repositório).
 
 🔍 Resultados
 O script gera:
 
-Gráficos do método do cotovelo para escolha de k.
-Visualização em 2D via TSNE destacando os clusters.
-Boxplots e Violin plots para comparar distribuições das variáveis entre os clusters.
-Um novo arquivo Excel com o cluster atribuído a cada registro.
+   Gráficos do método do cotovelo para escolha de k.
+   Visualização em 2D via TSNE destacando os clusters.
+   Boxplots e Violin plots para comparar distribuições das variáveis entre os clusters.
+   Um novo arquivo Excel com o cluster atribuído a cada registro.
